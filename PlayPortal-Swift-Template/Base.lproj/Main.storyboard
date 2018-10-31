@@ -63,11 +63,62 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wO0-7v-5x5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6b0-YP-VBz"/>
+                    <navigationItem key="navigationItem" id="6b0-YP-VBz">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="1xl-Oq-ycR">
+                            <connections>
+                                <action selector="settingsTapped:" destination="TlB-eH-lFy" id="20k-mA-ntI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqd-i6-ZVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2887.1999999999998" y="26.53673163418291"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="oVQ-es-GUs">
+            <objects>
+                <tableViewController restorationIdentifier="settings" storyboardIdentifier="settings" id="6sc-AU-5pN" customClass="SettingsTableViewController" customModule="PlayPortal_Swift_Template" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qwg-78-8q2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsTableViewCell" id="CUt-7D-hOI" customClass="SettingsTableViewCell" customModule="PlayPortal_Swift_Template" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CUt-7D-hOI" id="BDj-YH-4WG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx5-f6-VhH">
+                                            <rect key="frame" x="16" y="0.0" width="359" height="43.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Cx5-f6-VhH" secondAttribute="trailing" id="ONm-cN-quF"/>
+                                        <constraint firstAttribute="bottom" secondItem="Cx5-f6-VhH" secondAttribute="bottom" id="ThY-f6-6ZB"/>
+                                        <constraint firstItem="Cx5-f6-VhH" firstAttribute="leading" secondItem="BDj-YH-4WG" secondAttribute="leading" constant="16" id="sSw-Ql-bm1"/>
+                                        <constraint firstItem="Cx5-f6-VhH" firstAttribute="top" secondItem="BDj-YH-4WG" secondAttribute="top" id="upf-o8-GWy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="Cx5-f6-VhH" id="Q9C-LS-udK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6sc-AU-5pN" id="Smm-vk-Szj"/>
+                            <outlet property="delegate" destination="6sc-AU-5pN" id="56e-yN-I63"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkv-8a-R4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3785" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cmS-0a-CQ6">

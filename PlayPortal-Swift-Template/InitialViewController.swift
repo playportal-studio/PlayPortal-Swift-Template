@@ -14,6 +14,13 @@ class InitialViewController: UIViewController {
     
     var userProfile: PlayPortalProfile!
     
+    @IBAction func settingsTapped(_ sender: UIBarButtonItem) {
+        guard let settings = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController else {
+            return
+        }
+        navigationController?.pushViewController(settings, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

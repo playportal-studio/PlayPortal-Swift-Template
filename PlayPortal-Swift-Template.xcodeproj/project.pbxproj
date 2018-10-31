@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C24E512218A052300E5B2F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24E511218A052300E5B2F8 /* LoginViewController.swift */; };
 		1C24E514218A08CD00E5B2F8 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24E513218A08CD00E5B2F8 /* InitialViewController.swift */; };
+		1C24E516218A0A8D00E5B2F8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24E515218A0A8D00E5B2F8 /* SettingsTableViewController.swift */; };
+		1C24E518218A0BE600E5B2F8 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24E517218A0BE600E5B2F8 /* SettingsTableViewCell.swift */; };
 		1C32F7722189FED700B9F773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C32F7712189FED700B9F773 /* AppDelegate.swift */; };
 		1C32F7772189FED700B9F773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C32F7752189FED700B9F773 /* Main.storyboard */; };
 		1C32F7792189FED900B9F773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C32F7782189FED900B9F773 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		1C24E511218A052300E5B2F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C24E513218A08CD00E5B2F8 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		1C24E515218A0A8D00E5B2F8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		1C24E517218A0BE600E5B2F8 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		1C32F76E2189FED700B9F773 /* PlayPortal-Swift-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlayPortal-Swift-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C32F7712189FED700B9F773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C32F7762189FED700B9F773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				1C32F77D2189FED900B9F773 /* Info.plist */,
 				1C24E511218A052300E5B2F8 /* LoginViewController.swift */,
 				1C24E513218A08CD00E5B2F8 /* InitialViewController.swift */,
+				1C24E515218A0A8D00E5B2F8 /* SettingsTableViewController.swift */,
+				1C24E517218A0BE600E5B2F8 /* SettingsTableViewCell.swift */,
 			);
 			path = "PlayPortal-Swift-Template";
 			sourceTree = "<group>";
@@ -215,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C24E516218A0A8D00E5B2F8 /* SettingsTableViewController.swift in Sources */,
 				1C24E514218A08CD00E5B2F8 /* InitialViewController.swift in Sources */,
 				1C24E512218A052300E5B2F8 /* LoginViewController.swift in Sources */,
+				1C24E518218A0BE600E5B2F8 /* SettingsTableViewCell.swift in Sources */,
 				1C32F7722189FED700B9F773 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
