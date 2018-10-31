@@ -47,11 +47,7 @@ class SettingsTableViewController: UITableViewController {
         case (0, 0):
             PlayPortalUtils.openOrDownloadPlayPORTAL(from: self)
         case (0, 1):
-            PlayPortalAuth.shared.logout { error in
-                if let error = error {
-                    print("Error occurred during logout: \(error)")
-                }
-            }
+            PlayPortalAuth.shared.logout()
         default:
             break
         }
