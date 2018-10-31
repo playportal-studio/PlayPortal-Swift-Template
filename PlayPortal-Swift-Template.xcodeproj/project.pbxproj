@@ -12,6 +12,7 @@
 		1C32F7772189FED700B9F773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C32F7752189FED700B9F773 /* Main.storyboard */; };
 		1C32F7792189FED900B9F773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C32F7782189FED900B9F773 /* Assets.xcassets */; };
 		1C32F77C2189FED900B9F773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C32F77A2189FED900B9F773 /* LaunchScreen.storyboard */; };
+		A5DA693C3C3D3CD5C1C5AEAF /* Pods_PlayPortal_Swift_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870D07D7BBC7C9EFFF2DB493 /* Pods_PlayPortal_Swift_Template.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1C32F7782189FED900B9F773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C32F77B2189FED900B9F773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C32F77D2189FED900B9F773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870D07D7BBC7C9EFFF2DB493 /* Pods_PlayPortal_Swift_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayPortal_Swift_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AB49066ACEC075446AC9D3 /* Pods-PlayPortal-Swift-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortal-Swift-Template.debug.xcconfig"; path = "Target Support Files/Pods-PlayPortal-Swift-Template/Pods-PlayPortal-Swift-Template.debug.xcconfig"; sourceTree = "<group>"; };
+		E2D1F093ECB5E69DBE8DB1E7 /* Pods-PlayPortal-Swift-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortal-Swift-Template.release.xcconfig"; path = "Target Support Files/Pods-PlayPortal-Swift-Template/Pods-PlayPortal-Swift-Template.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DA693C3C3D3CD5C1C5AEAF /* Pods_PlayPortal_Swift_Template.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D8E674C7CD2AD499537F94F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94AB49066ACEC075446AC9D3 /* Pods-PlayPortal-Swift-Template.debug.xcconfig */,
+				E2D1F093ECB5E69DBE8DB1E7 /* Pods-PlayPortal-Swift-Template.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1C32F7652189FED700B9F773 = {
 			isa = PBXGroup;
 			children = (
 				1C32F7702189FED700B9F773 /* PlayPortal-Swift-Template */,
 				1C32F76F2189FED700B9F773 /* Products */,
+				0D8E674C7CD2AD499537F94F /* Pods */,
+				9A20D0FA85956E3F2ABB422E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = "PlayPortal-Swift-Template";
 			sourceTree = "<group>";
 		};
+		9A20D0FA85956E3F2ABB422E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				870D07D7BBC7C9EFFF2DB493 /* Pods_PlayPortal_Swift_Template.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C32F7802189FED900B9F773 /* Build configuration list for PBXNativeTarget "PlayPortal-Swift-Template" */;
 			buildPhases = (
+				227182FB1D746B237290A20D /* [CP] Check Pods Manifest.lock */,
 				1C32F76A2189FED700B9F773 /* Sources */,
 				1C32F76B2189FED700B9F773 /* Frameworks */,
 				1C32F76C2189FED700B9F773 /* Resources */,
+				1C346D4DA2F7DCBA2F634FA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C346D4DA2F7DCBA2F634FA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayPortal-Swift-Template/Pods-PlayPortal-Swift-Template-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PPSDK-Swift/PPSDK_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPSDK_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayPortal-Swift-Template/Pods-PlayPortal-Swift-Template-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		227182FB1D746B237290A20D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayPortal-Swift-Template-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C32F76A2189FED700B9F773 /* Sources */ = {
@@ -280,6 +358,7 @@
 		};
 		1C32F7812189FED900B9F773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94AB49066ACEC075446AC9D3 /* Pods-PlayPortal-Swift-Template.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +377,7 @@
 		};
 		1C32F7822189FED900B9F773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D1F093ECB5E69DBE8DB1E7 /* Pods-PlayPortal-Swift-Template.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
