@@ -34,7 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PlayPortalLoginDelegate {
             guard let self = self else { return }
             if let userProfile = userProfile {
                 //  User is authenticated, go to initial
-                //  TODO: go to initial
+                guard let nav = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navigation") as? UINavigationController
+                    , let initial = nav.viewControllers[0] as? InitialViewController
+                    else {
+                        return
+                }
+                
+                initial.userProfile = userProfile
+                
+                self.window?.rootViewController = nav
             } else if let error = error {
                 print("Error during authentication: \(error)")
             } else {
